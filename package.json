@@ -1,12 +1,30 @@
 {
   "name": "basic",
   "version": "1.0.0",
-  "description": "",
+  "description": "Description of your project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "watchify js/src/index.js -o js/src/bundle.js",
+    "lint": "node_modules/.bin/eslint js/src"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Adam M Deeley",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADeeley/vanilla_skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ADeeley/vanilla_skeleton/issues"
+  },
+  "homepage": "https://github.com/ADeeley/vanilla_skeleton#readme",
+  "dependencies": {
+    "browserify": "^14.5.0",
+    "eslint": "^4.13.1",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
+  }
 }

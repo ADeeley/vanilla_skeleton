@@ -1,4 +1,5 @@
 'use strict';
+import '../css/index.scss';
 
 let el = document.createElement('h1');
 el.innerHTML = 'Test';

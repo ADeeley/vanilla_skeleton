@@ -1,1 +1,40 @@
 /* Style */
+header {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1200px;
+    margin: auto;
+}
+
+%grid-item {
+    display: inline-grid;
+    min-height: 50px;
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+}
+.single-item {
+    @extend %grid-item;
+}
+
+.double-item {
+    @extend %grid-item;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.simon-item {
+    background-color: slateblue;
+}
+
+.twitch-item {
+    background-color:grey;
+}
+
+.recipe-item {
+    background-color: lightcoral;
+}

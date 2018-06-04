@@ -3,3 +3,4 @@
 *.swp
 *.scssc
 node_modules
+bundle.js
